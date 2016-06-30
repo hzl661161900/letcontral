@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hzl.administrator.testled.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="红"
+        android:id="@+id/button_red"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="127dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绿"
+        android:id="@+id/button_green"
+        android:layout_alignTop="@+id/button_red"
+        android:layout_toEndOf="@+id/button_red" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蓝"
+        android:id="@+id/button_blue"
+        android:layout_alignTop="@+id/button_green"
+        android:layout_toEndOf="@+id/button_green" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全红"
+        android:id="@+id/button_allred"
+        android:layout_below="@+id/button_red"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="146dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全绿"
+        android:id="@+id/button_allgr"
+        android:layout_alignTop="@+id/button_allred"
+        android:layout_toEndOf="@+id/button_allred" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全蓝"
+        android:id="@+id/button_allblue"
+        android:layout_alignTop="@+id/button_allgr"
+        android:layout_toEndOf="@+id/button_allgr" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新"
+        android:id="@+id/button_updata"
+        android:layout_above="@+id/button_allgr"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="灯的数量："
+        android:id="@+id/textView_lednum"
+        android:layout_alignBaseline="@+id/button_blue"
+        android:layout_alignBottom="@+id/button_blue"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全关"
+        android:id="@+id/button_alloff"
+        android:layout_below="@+id/textView_lednum"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_led"
+        android:layout_below="@+id/button_blue"
+        android:layout_alignStart="@+id/textView_lednum" />
+
+
+</RelativeLayout>
